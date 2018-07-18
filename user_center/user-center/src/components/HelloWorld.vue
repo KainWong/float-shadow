@@ -10,6 +10,7 @@
         <label>About</label>
       </router-link>
     </div>
+    <el-button type="primary">aaa</el-button>
 </div>
 </template>
 
