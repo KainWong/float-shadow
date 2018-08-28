@@ -1,12 +1,13 @@
 <template>
 <div class="main-style">
-    <v-info></v-info>
+    <router-view></router-view>
 </div>
     
 </template>
 
 <style scoped>
 .main-style {
+    padding: 30px 0;
     background-color:#EEE;
     display: flex;
     justify-content: center;
@@ -14,10 +15,8 @@
 </style>
 
 <script>
-import Info from '../Info.vue'
 export default {
     components:{
-    'v-info' : Info
     }
 }
 </script>
