@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 const menu = [
     {
-        id: 'home-page',
+        id: 'homepage',
         name: '首页',
         icon: 'float-icon-cangku_kucunxiangqing',
     },
