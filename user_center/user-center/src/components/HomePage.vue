@@ -197,7 +197,7 @@ export default {
     name : 'HomePage',
     data() {
         return {
-            userName : '愚柴',
+            userName : '王坤',
             markList : [
                 {
                     name : '我的回复',
@@ -249,6 +249,13 @@ export default {
     methods:{
         changeChooseTag(value){
             this.chooseTag = value;
+        },
+        fafa(){
+            aa.map(element => {
+                element.map(el => {
+                    return 
+                })
+            })
         }
     }
 }

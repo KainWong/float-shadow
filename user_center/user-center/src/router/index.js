@@ -10,6 +10,10 @@ import BusStop from '@/components/BusStop'
 import DiaryWall from '@/components/DiaryWall'
 import TopicStreet from '@/components/TopicStreet'
 import CircleEr from '@/components/CircleEr'
+import FindCircle from '@/components/FindCircle'
+import FindTopic from '@/components/FindTopic'
+import CircleInfo from '@/components/CircleInfo'
+import CircleHome from '@/components/CircleHome'
 
 Vue.use(Router)
 
@@ -49,6 +53,28 @@ export default new Router({
           path: '/circleer',
           name: 'CircleEr',
           component: CircleEr,
+          children: [
+            {
+              path: '/findcircle',
+              name: 'FindCircle',
+              component: FindCircle,
+            },
+            {
+              path: '/findtopic',
+              name: 'FindTopic',
+              component: FindTopic,
+            },
+            {
+              path: '/circleinfo',
+              name: 'CircleInfo',
+              component: CircleInfo,
+            },
+            {
+              path: '',
+              name: 'CircleHome',
+              component: CircleHome,
+            },
+          ]
         },
       ]
     },
