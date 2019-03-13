@@ -85,11 +85,6 @@
                     </div>
                 </div>
             </div>
-            <div class="side-div">
-                <h5 class="recent-circle">
-                    <span style="border-bottom: solid 3px #ff9b78;">最近话题 </span>
-                </h5>
-            </div>
         </div>
     </div>
 </div>

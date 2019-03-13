@@ -14,6 +14,8 @@ import FindCircle from '@/components/FindCircle'
 import FindTopic from '@/components/FindTopic'
 import CircleInfo from '@/components/CircleInfo'
 import CircleHome from '@/components/CircleHome'
+import NewTopic from '@/components/NewTopic'
+import TopicList from '@/components/TopicList'
 
 Vue.use(Router)
 
@@ -48,6 +50,18 @@ export default new Router({
           path: '/topicstreet',
           name: 'TopicStreet',
           component: TopicStreet,
+          children: [
+            {
+              path: '/',
+              name: 'TopicList',
+              component: TopicList,
+            },
+            {
+              path: '/newTopic',
+              name: 'NewTopic',
+              component: NewTopic,
+            },
+          ]
         },
         {
           path: '/circleer',
